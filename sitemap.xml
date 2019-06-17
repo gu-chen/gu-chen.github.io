@@ -2,9 +2,37 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://yoursite.com/2019/06/17/hello-world/</loc>
+    <loc>https://gu-chen.github.io/2019/06/17/MyTest1/</loc>
     
-    <lastmod>2019-06-16T17:06:11.171Z</lastmod>
+    <lastmod>2019-06-17T05:08:38.313Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://gu-chen.github.io/2019/06/17/hello-world/</loc>
+    
+    <lastmod>2019-06-17T05:04:38.339Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://gu-chen.github.io/tags/index.html</loc>
+    
+    <lastmod>2019-06-17T04:31:35.480Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://gu-chen.github.io/about/index.html</loc>
+    
+    <lastmod>2019-06-17T04:18:46.938Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://gu-chen.github.io/categories/index.html</loc>
+    
+    <lastmod>2019-06-17T04:16:01.389Z</lastmod>
     
   </url>
   
