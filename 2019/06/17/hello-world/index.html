@@ -30,6 +30,13 @@
 
 
 
+  
+  
+    
+    
+  <script src="/lib/pace/pace.min.js?v=1.0.2"></script>
+  <link rel="stylesheet" href="/lib/pace/pace-theme-minimal.min.css?v=1.0.2">
+
 
 
 
@@ -78,7 +85,7 @@
     root: '/',
     scheme: 'Gemini',
     version: '7.1.2',
-    sidebar: {"position":"right","display":"post","offset":12,"onmobile":false,"dimmer":false},
+    sidebar: {"position":"left","display":"post","offset":12,"onmobile":false,"dimmer":false},
     back2top: true,
     back2top_sidebar: false,
     fancybox: false,
@@ -181,7 +188,7 @@
     
   
 
-  <div class="container sidebar-position-right page-post-detail">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -198,7 +205,7 @@
     </div>
     
       
-        <p class="site-subtitle">干，多思考，多多干</p>
+        <h1 class="site-subtitle" itemprop="description">干，多思考，多多干</h1>
       
     
     
@@ -399,11 +406,11 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Hello World
+          <h2 class="post-title" itemprop="name headline">Hello World
 
               
             
-          </h1>
+          </h2>
         
 
         <div class="post-meta">
@@ -445,7 +452,7 @@
             
                 <span class="post-meta-item-text">评论数：</span>
                 <a href="/2019/06/17/hello-world/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count gitment-comments-count" data-xid="/2019/06/17/hello-world/" itemprop="commentCount"></span>
+                  <span class="post-comments-count valine-comment-count" data-xid="/2019/06/17/hello-world/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -498,6 +505,10 @@
 
       
     </div>
+
+    
+      
+
 
     
 
@@ -581,9 +592,6 @@
 
   
     <div class="comments" id="comments">
-      
-        <div id="gitment-container"></div>
-      
     </div>
 
   
@@ -656,6 +664,16 @@
             </div>
           
 
+          
+            <div class="chat motion-element">
+              
+              
+                <a onclick="tidioChatApi.open();">
+              
+              <i class="fa fa-comment"></i>
+                  聊天
+                </a>
+            </div>
           
 
           
@@ -756,8 +774,6 @@
   
 </div>
 
-
-  <div class="powered-by">由 <a href="https://hexo.io" class="theme-link" rel="noopener" target="_blank">Hexo</a> 强力驱动 v3.9.0</div>
 
 
 
@@ -967,41 +983,37 @@
   
 
   
-
-
   
-    <!-- LOCAL: You can save these files to your site and update links -->
 
-  
-  <script src="https://cdn.jsdelivr.net/gh/theme-next/theme-next-gitment@1/gitmint.browser.js"></script>
+<script src="//cdn1.lncld.net/static/js/3.11.1/av-min.js"></script>
 
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/theme-next/theme-next-gitment@1/default.css">
-<!-- END LOCAL -->
+
+
+<script src="//unpkg.com/valine/dist/Valine.min.js"></script>
 
 <script>
-  function renderGitment() {
-    var gitment = new Gitmint({
-      id: window.location.pathname,
-      owner: 'gu-chen',
-      repo: 'hexo-comments',
-      
-        lang: '' || navigator.language || navigator.systemLanguage || navigator.userLanguage,
-      
-      oauth: {
-      
-      
-        client_secret: '4ab75e78ec3ca1aa724d4cb777a4a37369235962',
-      
-        client_id: '8e7f2635924304283a3d'
-      }
-    });
-    gitment.render('gitment-container');
-  }
-
-  
-    renderGitment();
-  
+  var GUEST = ['nick', 'mail', 'link'];
+  var guest = 'nick,mail,link';
+  guest = guest.split(',').filter(function(item) {
+    return GUEST.indexOf(item) > -1;
+  });
+  new Valine({
+    el: '#comments',
+    verify: false,
+    notify: true,
+    appId: '0PvGkyuo1lATGEUb7NrHK7i1-9Nh9j0Va',
+    appKey: 'XGI26zgPRfkIQkVdlwuvpGgW',
+    placeholder: '来一发嘛~~~嘿嘿~',
+    avatar: 'identicon',
+    meta: guest,
+    pageSize: '10' || 10,
+    visitor: false,
+    lang: 'zh-cn' || 'zh-cn'
+  });
 </script>
+
+
+
 
   
 
@@ -1095,6 +1107,8 @@
   
 
   
+  <script src="//code.tidio.co/lx9fbn6dygvwlndovsggn9dspghwzeiv.js"></script>
+
 
 </body>
 </html>

@@ -30,6 +30,13 @@
 
 
 
+  
+  
+    
+    
+  <script src="/lib/pace/pace.min.js?v=1.0.2"></script>
+  <link rel="stylesheet" href="/lib/pace/pace-theme-minimal.min.css?v=1.0.2">
+
 
 
 
@@ -78,7 +85,7 @@
     root: '/',
     scheme: 'Gemini',
     version: '7.1.2',
-    sidebar: {"position":"right","display":"post","offset":12,"onmobile":false,"dimmer":false},
+    sidebar: {"position":"left","display":"post","offset":12,"onmobile":false,"dimmer":false},
     back2top: true,
     back2top_sidebar: false,
     fancybox: false,
@@ -132,7 +139,7 @@
   };
 </script>
 
-  <title>gu-chen的博客</title>
+  <title>gu-chen的博客 – 干，多思考，多多干</title>
   
 
 
@@ -180,7 +187,7 @@
     
   
 
-  <div class="container sidebar-position-right 
+  <div class="container sidebar-position-left 
   page-home">
     <div class="headband"></div>
 
@@ -198,7 +205,7 @@
     </div>
     
       
-        <p class="site-subtitle">干，多思考，多多干</p>
+        <h1 class="site-subtitle" itemprop="description">干，多思考，多多干</h1>
       
     
     
@@ -399,13 +406,13 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
+          <h2 class="post-title" itemprop="name headline">
                 
                 
                 <a href="/2019/06/17/hello-world/" class="post-title-link" itemprop="url">Hello World</a>
               
             
-          </h1>
+          </h2>
         
 
         <div class="post-meta">
@@ -437,6 +444,19 @@
 
           
             
+            
+              
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+            
+                <span class="post-meta-item-text">评论数：</span>
+                <a href="/2019/06/17/hello-world/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2019/06/17/hello-world/" itemprop="commentCount"></span>
+                </a>
+              </span>
             
           
 
@@ -544,13 +564,13 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
+          <h2 class="post-title" itemprop="name headline">
                 
                 
                 <a href="/2019/06/17/MyTest1/" class="post-title-link" itemprop="url">MyTest1</a>
               
             
-          </h1>
+          </h2>
         
 
         <div class="post-meta">
@@ -583,6 +603,19 @@
           
             
             
+              
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+            
+                <span class="post-meta-item-text">评论数：</span>
+                <a href="/2019/06/17/MyTest1/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2019/06/17/MyTest1/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
           
 
           
@@ -608,16 +641,17 @@
 
       
         
+          <hr>
+<p>title: Hexo-NexT主题配置<br>date: 2018-01-20 20:41:08<br>categories: Hexo</p>
+          <!--noindex-->
           
-            <hr>
-<p>title: Hexo-NexT主题配置<br>date: 2018-01-20 20:41:08<br>categories: Hexo<br>tags:</p>
-<ul>
-<li>Hexo</li>
-<li>NexT<br>top: 100<br>copyright: ture</li>
-</ul>
-<hr>
-
+            <div class="post-button text-center">
+              <a class="btn" href="/2019/06/17/MyTest1/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
           
+          <!--/noindex-->
         
       
     </div>
@@ -723,6 +757,16 @@
           
 
           
+            <div class="chat motion-element">
+              
+              
+                <a onclick="tidioChatApi.open();">
+              
+              <i class="fa fa-comment"></i>
+                  聊天
+                </a>
+            </div>
+          
 
           
             <div class="links-of-author motion-element">
@@ -805,8 +849,6 @@
   
 </div>
 
-
-  <div class="powered-by">由 <a href="https://hexo.io" class="theme-link" rel="noopener" target="_blank">Hexo</a> 强力驱动 v3.9.0</div>
 
 
 
@@ -1012,6 +1054,36 @@
   
 
   
+  
+
+<script src="//cdn1.lncld.net/static/js/3.11.1/av-min.js"></script>
+
+
+
+<script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+
+<script>
+  var GUEST = ['nick', 'mail', 'link'];
+  var guest = 'nick,mail,link';
+  guest = guest.split(',').filter(function(item) {
+    return GUEST.indexOf(item) > -1;
+  });
+  new Valine({
+    el: '#comments',
+    verify: false,
+    notify: true,
+    appId: '0PvGkyuo1lATGEUb7NrHK7i1-9Nh9j0Va',
+    appKey: 'XGI26zgPRfkIQkVdlwuvpGgW',
+    placeholder: '来一发嘛~~~嘿嘿~',
+    avatar: 'identicon',
+    meta: guest,
+    pageSize: '10' || 10,
+    visitor: false,
+    lang: 'zh-cn' || 'zh-cn'
+  });
+</script>
+
+
 
 
 
@@ -1104,6 +1176,8 @@
   
 
   
+  <script src="//code.tidio.co/lx9fbn6dygvwlndovsggn9dspghwzeiv.js"></script>
+
 
 </body>
 </html>
