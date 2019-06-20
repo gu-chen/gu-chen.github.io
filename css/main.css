@@ -1849,7 +1849,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #ff988c;
+  background: #1ccf93;
 }
 .feed-link,
 .chat {
@@ -2041,7 +2041,7 @@ pre .javascript .function {
 .with-love {
   display: inline-block;
   margin: 0 5px;
-  color: #ff0000;
+  color: #999;
 }
 .powered-by,
 .theme-info {
