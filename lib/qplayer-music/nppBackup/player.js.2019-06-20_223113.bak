@@ -235,13 +235,11 @@
 			mA.css("transform", "translateX(250px)");
 		    $('.ssBtn .adf').addClass('on');
         // 新增的
-        // $('.ssBtn .adf .icon-back').fadeIn().css("display","block");
-        $('.ssBtn .adf .icon-back').css("display","block");
-        $('.ssBtn .adf .icon-music').hide();
+        $('.ssBtn .adf .icon-back').show();
+        $('.ssBtn .adf .icon-back').hide();
 		} else {	
 			mA.css("transform", "translateX(0px)");
           $('.ssBtn .adf').removeClass('on');
-          // 新增的
           $('.ssBtn .adf .icon-music').show();
           $('.ssBtn .adf .icon-back').hide();
 		}

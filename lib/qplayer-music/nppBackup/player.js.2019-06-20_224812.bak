@@ -235,7 +235,6 @@
 			mA.css("transform", "translateX(250px)");
 		    $('.ssBtn .adf').addClass('on');
         // 新增的
-        // $('.ssBtn .adf .icon-back').fadeIn().css("display","block");
         $('.ssBtn .adf .icon-back').css("display","block");
         $('.ssBtn .adf .icon-music').hide();
 		} else {	

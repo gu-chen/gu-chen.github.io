@@ -155,7 +155,7 @@
 	overflow: hidden;
 }
 #playlist li {
-	color:#716e6e;
+	color:#989898;
 	font-size:11px;
 	line-height:2;
 	padding:3px 15px;

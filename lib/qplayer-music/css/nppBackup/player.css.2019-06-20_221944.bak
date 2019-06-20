@@ -155,7 +155,7 @@
 	overflow: hidden;
 }
 #playlist li {
-	color:#716e6e;
+	color:#989898;
 	font-size:11px;
 	line-height:2;
 	padding:3px 15px;
@@ -212,11 +212,6 @@
 	-ms-transition:all .3s ease-out;
 	-o-transition:all .3s ease-out;
 	transition:all .3s ease-out;
-}
-#pContent .ssBtn .adf .icon-back {
-  display:none;
-  line-height:15px;
-  text-align:center;
 }
 @media (max-width: 767px) {
   #pContent .ssBtn {

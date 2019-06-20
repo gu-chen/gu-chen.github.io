@@ -155,7 +155,7 @@
 	overflow: hidden;
 }
 #playlist li {
-	color:#716e6e;
+	color:#989898;
 	font-size:11px;
 	line-height:2;
 	padding:3px 15px;
@@ -200,9 +200,9 @@
 	width:20px;
 	height:20px;
   line-height:20px;
-  /* text-align:center; */
+  text-align:center;
+	top:20px;
 	position:relative;
-  top:20px;
 	/* background:transparent url("../img/2.png") repeat scroll 0% 0%; */
 }
 #pContent .ssBtn .adf.on {
@@ -213,17 +213,10 @@
 	-o-transition:all .3s ease-out;
 	transition:all .3s ease-out;
 }
-#pContent .ssBtn .adf .icon-back {
-  display:none;
-  line-height:15px;
-  text-align:center;
-}
 @media (max-width: 767px) {
-  #pContent .ssBtn {
-    height:30px;
-  }
   #pContent .ssBtn .adf {
-    top:5px;
+    height:20px;
+  line-height:20px;
   }
 }
 
