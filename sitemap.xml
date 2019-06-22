@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://gu-chen.github.io/about/index.html</loc>
+    
+    <lastmod>2019-06-21T17:51:37.321Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://gu-chen.github.io/2019/06/17/MyTest1/</loc>
+    
+    <lastmod>2019-06-21T03:57:29.806Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://gu-chen.github.io/2019/06/19/Tab-Tags/</loc>
     
     <lastmod>2019-06-20T10:59:36.723Z</lastmod>
@@ -16,13 +30,6 @@
   </url>
   
   <url>
-    <loc>https://gu-chen.github.io/2019/06/17/MyTest1/</loc>
-    
-    <lastmod>2019-06-19T09:48:24.183Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://gu-chen.github.io/tags/index.html</loc>
     
     <lastmod>2019-06-18T03:15:38.581Z</lastmod>
@@ -33,13 +40,6 @@
     <loc>https://gu-chen.github.io/categories/index.html</loc>
     
     <lastmod>2019-06-18T03:06:43.049Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://gu-chen.github.io/about/index.html</loc>
-    
-    <lastmod>2019-06-17T04:18:46.938Z</lastmod>
     
   </url>
   
