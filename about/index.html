@@ -658,11 +658,9 @@
     
 
     
-  </div>
-  
-  
-  
     
+    
+      
 <div id="QPlayer">
   <div id="pContent">
     <div id="player">
@@ -696,7 +694,9 @@
   <ol id="playlist"></ol>
 </div> 
 
-  
+    
+    
+  </div>
   
 
   
@@ -1204,23 +1204,34 @@
 
   
 
+
+
+<link rel="stylesheet" href="/lib/qplayer-music/css/player.css?v=2.0.0">
   
+<script>
+  var isRotate = true;
+  var autoplay = false;
+  var firstTimeShowPlayer = false;
+  var firstTimeShowPlayerAndList = false;
+  var playlist = [
+  {title:'Where Is The Love?',artist:'Black Eyed Peas',album:'Where Is The Love',mp3:'//dl.stream.qqmusic.qq.com/M500000BFj112HpADN.mp3?vkey=BC34927A80A757801EEE3494D27E748EFCC62A990733316E8E65D62D4349B68C09F42A91E1C75048A4DFC77BFF91CDD2356DF7758514F339&guid=5150825362&fromtag=1',cover:'//p2.music.126.net/knXuA0rAKFg9eViip-NaGQ==/7783442814172824.jpg?param=60x60'},
+  {title:'晃着晃着就老了',artist:'孙子涵',album:'双子涵',mp3:'http://fs.open.kugou.com/50a0cee7ed67d5b5c35b442819f774ad/5d0f7fe9/G083/M00/07/1F/M5QEAFf7AWuAO2RiAEtGwaonaNI729.mp3',cover:'//p1.music.126.net/nhEzipMlvQlgSSbeg4tnqA==/3265549607161428.jpg?param=60x60'},
+  {title:'她',artist:'不可撤销乐队',album:'她 千鸟',mp3:'//link.hhtjim.com/qq/003BNTQM11ZSPt.mp3',cover:'//p1.music.126.net/4x2X7W_VGHQeHoMR4a3Wbw==/3227066628477266.jpg?param=60x60'},
+  {title:'再见二丁目',artist:'杨千嬅',album:'Miriam\'s Melodies',mp3:'//antiserver.kuwo.cn/anti.s?useless=/resource/&format=mp3&rid=MUSIC_51444990&response=res&type=convert_url&',cover:'//y.gtimg.cn/music/photo_new/T002R300x300M000001hR4Tj4WnsKV.jpg'},
+  {title:'年度之歌',artist:'谢安琪',album:'Yelling',mp3:'//link.hhtjim.com/qq/003Jlfrz4Rm9ct.mp3',cover:'//img.xiami.net/images/album/img95/2295/3218621464957901.jpg'},
+  ];
+</script>
+
+
   
-  <link rel="stylesheet" href="/lib/qplayer-music/css/player.css?v=2.0.0">
-  
-  <script>
-    var isRotate = false;
-    var autoplay = false;
-    var playlist = [
-    {title:'她',artist:'不可撤销乐队',mp3:'//link.hhtjim.com/qq/003BNTQM11ZSPt.mp3',cover:'//p1.music.126.net/4x2X7W_VGHQeHoMR4a3Wbw==/3227066628477266.jpg'},
-    {title:'再见二丁目',artist:'杨千嬅',mp3:'//antiserver.kuwo.cn/anti.s?useless=/resource/&format=mp3&rid=MUSIC_51444990&response=res&type=convert_url&',cover:'//y.gtimg.cn/music/photo_new/T002R300x300M000001hR4Tj4WnsKV.jpg'},
-    {title:'年度之歌',artist:'谢安琪',mp3:'//link.hhtjim.com/qq/003Jlfrz4Rm9ct.mp3',cover:'//img.xiami.net/images/album/img95/2295/3218621464957901.jpg'},
-    ];
-  </script>
-  
-  
-  <script src="/lib/qplayer-music/player.js?v=2.1.1" async></script>
-  
+
+<script src="//cdn.bootcss.com/jQuery.Marquee/1.5.0/jquery.marquee.min.js" async></script>
+
+<script src async></script>
+
+
+<script src="/lib/qplayer-music/js/player.js?v=2.1.1" async></script>
+
 
 </body>
 </html>
